@@ -1,17 +1,20 @@
 console.log('What are you buyin\', what are you sellin\'')
-const userChoiceDisplay = document.createElement('h1')
-const computerChoiceDisplay = document.createElement('h1')
-const resultDisplay = document.createElement('h1')
+const userChoiceDisplay = document.createElement('h3')
+const computerChoiceDisplay = document.createElement('h3')
+const resultDisplay = document.createElement('h2')
 const gameGrid = document.getElementById('game')
 gameGrid.append(userChoiceDisplay, computerChoiceDisplay, resultDisplay)
 
-const choices = [ 'warrior', 'mage', 'rogue']
+const choices = [ 'rogue', 'warrior', 'mage']
 let userChoice
+let userPlayed
 let computerChoice
+let whoWon
 
 const handleClick = (e) => {
     userChoice = e.target.id
     userChoiceDisplay.innerHTML = 'You chose: ' + userChoice
+    userPlayed = userChoice
     generateComputerChoice()
     getResult()
 }
@@ -56,7 +59,7 @@ const getResult = () => {
 // Generate the computer's response
 
 /* ~~~~ My goal for the computer's response logic: ~~~~
- Therefore, this is the best way to win at rock-paper-scissors: if you lose the first round, switch to the thing that beats the thing your opponent just played. If you win, don't keep playing the same thing, but instead switch to the thing that would beat the thing that you just played. In other words, play the hand your losing opponent just played. To wit: you win a round with rock against someone else's scissors. They are about to switch to paper. You should switch to scissors. Got it? Good. */
+ if you lose the first round, switch to the thing that beats the thing your opponent just played. If you win, don't keep playing the same thing, but instead switch to the thing that would beat the thing that you just played. In other words, play the hand your losing opponent just played. To wit: you win a round with rock against someone else's scissors. They are about to switch to paper. You should switch to scissors. Got it? Good. */
 
 
  // Compare the responses & determine winner
