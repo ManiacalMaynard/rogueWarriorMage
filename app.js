@@ -1,45 +1,48 @@
 console.log('What are you buyin\', what are you sellin\'')
 
-const choices = [ 'rogue', 'warrior', 'mage' ]
-let userChoice
+// Declaring all global variables now because I'm cool like that
+let userChoice // sourced from clicking the div chosen in the HTML page
 let computerChoice
 
-let whoWon
+// track who won the previous game and what they played for use in the computer logic
+let whoWon = 'draw'
 let userPlayed 
 let computerPlayed
 
-const generateComputerChoice = () => { 
-    if (whoWon = 'user') {
-        userWon()
-    } else if (whoWon = 'computer') {
-        computerWon()
-    } else {
-        randomChoice()
-    }
+
+// when the player wins, computer plays what would beat the winning move
+const userWon = () => {
+    return userPlayed = 'rogue' ?
+    'warrior' :
+    userPlayed = 'warrior' ?
+    userPlayed = 'mage' :
+    'rogue'
 }
 
+// when the computer wins, computer plays what would have beat the winning move
+const computerWon = () => {
+    return computerPlayed = 'rogue' ?
+    'warrior' :
+    userPlayed = 'warrior' ?
+    userPlayed = 'mage' :
+    'rogue'
+}
 
 const randomChoice = () => {
+    const choices = [ 'rogue', 'warrior', 'mage' ]
     computerChoice = choices[Math.floor(Math.random() * choices.length)]
 }
 
-const userWon = () => {
-    computerChoice = choices[Math.floor(Math.random() * choices.length)]
+// Calling the different logic routines for each win state
+const generateComputerChoice = () => { 
+    return whoWon = 'draw' ?
+    randomChoice() :
+    whoWon = 'player' ?
+    userWon() :
+    computerWon() ;
+
 }
 
-const computerWon = () => {
-    computerChoice = choices[Math.floor(Math.random() * choices.length)]
-}
-
-
-const handleClick = (e) => {
-    userChoice = e
-    userChoiceDisplay.innerText = userChoice
-    generateComputerChoice()
-    computerChoiceDisplay.innerText = computerChoice
-    userPlayed = userChoice
-    getResult()
-}
 
 // There's probably a better way to do this than a switch case but...
 const getResult = () => {
@@ -65,7 +68,16 @@ const getResult = () => {
     }
 }
 
-
-
+// Finally the actionable from user sets the whole thing in motion
+const handleClick = (e) => {
+    userChoice = e
+    userChoiceDisplay.innerText = userChoice
+    generateComputerChoice()
+    computerChoiceDisplay.innerText = computerChoice
+    userPlayed = userChoice
+    computerPlayed = computerChoice
+    getResult()
+    console.log(whoWon)
+}
 
 

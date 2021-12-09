@@ -20,11 +20,10 @@ Feel free to contact me with questions, typos, or your favorite craft beer for m
 - [ ] Create animation for delay to outcome
 
 ### JavaScript tasks
-- [ ] Reconfigure generateComputerChoice() with simple AI:
-  - [ ] Add logic based on player’s previous choice and who won (see Ars Technica quote above)
-  - [ ] Add tracker function for players previous choice and win conditions
-  - [ ] Add a randomizer for “no previous player choice” state
-- [ ] Test alternatives to switch-case in getResult() - *Possibly the best way to do it, very read-able and only 19 lines*
+- [ ] Add logic based on player’s previous choice and who won (see Ars Technica quote above)
+- [x] Add tracker function for players previous choice and win conditions
+- [x] Add a randomizer for “no previous player choice” state
+- [x] Test alternatives to switch-case in getResult()
 - [ ] Add a rematch button to reset the game board (keeps tracking and score)
 - [ ] Add a reset button to clear the AI tracking and score
 - [ ] Create win/loss counter function
