@@ -9,12 +9,22 @@
 <body>
     <div>
         <h1>Let's play: </h1>
-        <p>Rogue - Warrior - Mage!</p>
+        <div>
+            <button onclick="handleClick('rogue')">Rogue</button>
+            <button onclick="handleClick('warrior')">Warrior</button>
+            <button onclick="handleClick('mage')">Mage</button>
+        </div>
     </div>
 
-    <div id="game"></div>
+    <div id="gameContainer">
+        <div>You chose: <span id="userChoiceDisplay"></span></div>
+        <div>Computer chose: <span id="computerChoiceDisplay"></span></div>
+        <div>The result is: <span id="resultDisplay"></span></div>
+    </div>
 
+    <div id="testingsite"></div>
 </body>
 
 <script src="./app.js"></script>
 </html>
+
