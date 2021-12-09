@@ -41,7 +41,7 @@ Feel free to contact me with questions, typos, or your favorite craft beer for m
 ### Down the road maybe?
 
 *Okay, so this is pretty out there and can be answered more simply by using glyphs/symbols rather than charactures. This allows for more interesting and user familiary thematic variation in the future rather than getting sucked down into how to tastefully navigate the below. Leaving the below for possible future use.*
-Add additional characters with further diversity in mind. 
+ - Add additional characters with further diversity in mind. 
  - Purely cosmetic, essential functions still play the same
  - Randomized at the start of each round for each role
  - Could be fun to include traditional fantasy character tropes of many cultures (i.e. ninja, samurai, mystic from Japan or ghost, hunter, shaman from indigenous Americans)
