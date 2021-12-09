@@ -20,13 +20,13 @@ Feel free to contact me with questions, typos, or your favorite craft beer for m
 - [ ] Create animation for delay to outcome
 
 ### JavaScript tasks
-- [ ] Add logic based on player’s previous choice and who won (see Ars Technica quote above)
+- [x] Add logic based on player’s previous choice and who won (see Ars Technica quote above)
 - [x] Add tracker function for players previous choice and win conditions
 - [x] Add a randomizer for “no previous player choice” state
 - [x] Test alternatives to switch-case in getResult()
 - [ ] Add a rematch button to reset the game board (keeps tracking and score)
 - [ ] Add a reset button to clear the AI tracking and score
-- [ ] Create win/loss counter function
+- [x] Create win/loss counter function
 - [ ] Add delay from player choice to outcome (builds drama)
 
 ### HTML & CSS tasks
@@ -41,6 +41,7 @@ Feel free to contact me with questions, typos, or your favorite craft beer for m
 
 ### Down the road maybe?
 
+*Okay, so this is pretty out there and can be answered more simply by using glyphs/symbols rather than charactures. This allows for more interesting and user familiary thematic variation in the future rather than getting sucked down into how to tastefully navigate the below. Leaving the below for possible future use.*
 Add additional characters with further diversity in mind. 
  - Purely cosmetic, essential functions still play the same
  - Randomized at the start of each round for each role

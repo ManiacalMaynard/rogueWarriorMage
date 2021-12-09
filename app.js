@@ -9,6 +9,9 @@ let whoWon = 'draw'
 let userPlayed 
 let computerPlayed
 
+// init variables for the win/loss counter
+let playerCounter = 0
+let computerCounter = 0
 
 // when the player wins, computer plays what would beat the winning move
 const userWon = () => {
@@ -52,12 +55,16 @@ const getResult = () => {
         case 'roguemage':
             resultDisplay.innerHTML = "Player wins!"
             whoWon = 'player'
+            playerCounter++
+            document.getElementById('playerCounter').innerText = playerCounter
             break
         case 'roguewarrior':
         case 'warriormage':
         case 'magerogue':
             resultDisplay.innerHTML = "Computer wins!"
             whoWon = 'computer'
+            computerCounter++
+            document.getElementById('computerCounter').innerText = computerCounter
             break
         case 'warriorwarrior':
         case 'magemage':
@@ -77,7 +84,6 @@ const handleClick = (e) => {
     userPlayed = userChoice
     computerPlayed = computerChoice
     getResult()
-    console.log(whoWon)
 }
 
 
