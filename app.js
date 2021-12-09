@@ -87,3 +87,7 @@ const handleClick = (e) => {
 }
 
 
+const resetMe = () => {
+    window.location.reload()
+    return false
+}

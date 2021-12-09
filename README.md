@@ -24,8 +24,7 @@ Feel free to contact me with questions, typos, or your favorite craft beer for m
 - [x] Add tracker function for players previous choice and win conditions
 - [x] Add a randomizer for “no previous player choice” state
 - [x] Test alternatives to switch-case in getResult()
-- [ ] Add a rematch button to reset the game board (keeps tracking and score)
-- [ ] Add a reset button to clear the AI tracking and score
+- [x] Add a reset button to clear the AI tracking and score
 - [x] Create win/loss counter function
 - [ ] Add delay from player choice to outcome (builds drama)
 

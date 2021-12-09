@@ -16,17 +16,18 @@
             <button onclick="handleClick('warrior')">Warrior</button>
             <button onclick="handleClick('mage')">Mage</button>
         </div>
+
+
+        <div>
+            <div>You chose: <span id="userChoiceDisplay"></span></div>
+            <div>I chose: <span id="computerChoiceDisplay"></span></div>
+            <div><span id="resultDisplay"></span></div>
+            <div>Player has won: <span id="playerCounter">0</span> times.</div>
+            <div>Computer has won: <span id="computerCounter">0</span> times.</div>
+        </div>
+        <div id="resetMe" onclick="resetMe()"><button>RESET</button></div>
     </div>
 
-    <div>
-        <div>You chose: <span id="userChoiceDisplay"></span></div>
-        <div>I chose: <span id="computerChoiceDisplay"></span></div>
-        <div><span id="resultDisplay"></span></div>
-        <div>Player has won: <span id="playerCounter">0</span> times.</div>
-        <div>Computer has won: <span id="computerCounter">0</span> times.</div>
-    </div>
-
-    <div id="testingsite"></div>
 </body>
 
 <script src="./app.js"></script>
