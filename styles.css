@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ * {
+ }
+div {
+    padding-top: 10px;
+}
+
+.gameContainer {
+    height: 100vh;
+
+}

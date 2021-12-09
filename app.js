@@ -15,17 +15,17 @@ const userWon = () => {
     return userPlayed = 'rogue' ?
     'warrior' :
     userPlayed = 'warrior' ?
-    userPlayed = 'mage' :
-    'rogue'
+    'mage' :
+    'rogue' ;
 }
 
 // when the computer wins, computer plays what would have beat the winning move
 const computerWon = () => {
     return computerPlayed = 'rogue' ?
     'warrior' :
-    userPlayed = 'warrior' ?
-    userPlayed = 'mage' :
-    'rogue'
+    computerPlayed = 'warrior' ?
+    'mage' :
+    'rogue' ;
 }
 
 const randomChoice = () => {
@@ -50,13 +50,13 @@ const getResult = () => {
         case 'warriorrogue':
         case 'magewarrior':
         case 'roguemage':
-            resultDisplay.innerHTML = "You have won"
+            resultDisplay.innerHTML = "Player wins!"
             whoWon = 'player'
             break
         case 'roguewarrior':
         case 'warriormage':
         case 'magerogue':
-            resultDisplay.innerHTML = "I have won"
+            resultDisplay.innerHTML = "Computer wins!"
             whoWon = 'computer'
             break
         case 'warriorwarrior':

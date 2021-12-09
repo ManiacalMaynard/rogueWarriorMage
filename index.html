@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
     <title>Rogue Warrior Mage game</title>
 </head>
 <body>
-    <div>
+    <div id="gameContainer">
         <h1>Let's play: </h1>
         <div>
             <button onclick="handleClick('rogue')">Rogue</button>
@@ -16,10 +18,10 @@
         </div>
     </div>
 
-    <div id="gameContainer">
+    <div>
         <div>You chose: <span id="userChoiceDisplay"></span></div>
-        <div>Computer chose: <span id="computerChoiceDisplay"></span></div>
-        <div>The result is: <span id="resultDisplay"></span></div>
+        <div>I chose: <span id="computerChoiceDisplay"></span></div>
+        <div><span id="resultDisplay"></span></div>
     </div>
 
     <div id="testingsite"></div>
